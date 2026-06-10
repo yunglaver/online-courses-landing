@@ -31,6 +31,19 @@ function createCard(currentCard) {
 
     cardPhoto.src = currentCard.photo_src;
     cardPhoto.alt = currentCard.text;
+    textContainer.classList.add("card-text__container");
+
+    const smallCards = [
+        "Prduct Management Fundamentals",
+        "HR  Management and Analytics",
+        "Graphic Design Basic",
+        "Business Development Management",
+        "Highload Software Architecture"
+    ];
+
+    textContainer.style.height = smallCards.includes(currentCard.text)
+        ? "120px"
+        : "150px";
 
     category.textContent = currentCard.category;
     category.style.backgroundColor =

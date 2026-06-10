@@ -165,7 +165,6 @@ select {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 390px;
   height: 438px;
   border-radius: 4px;
