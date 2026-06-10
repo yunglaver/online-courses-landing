@@ -65,6 +65,15 @@ nav {
 }
 
 body {
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  scrollbar-width: none;
   margin: 0;
   font-family: "Lato", sans-serif;
 }
