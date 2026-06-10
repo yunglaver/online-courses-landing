@@ -274,4 +274,32 @@ footer {
   margin-bottom: 86px;
 }
 
+@media (max-width: 1230px) {
+  .decor {
+    display: none;
+  }
+  .search-form {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+  .category-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main {
+    justify-content: center;
+  }
+  .courses {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 390px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
