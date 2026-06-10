@@ -11,23 +11,27 @@ export async function renderCards(){
 
             const currentCard = state.cardsForRender[i]
 
-            const cardContainer = document.createElement("div")
+            const cardContainer = document.createElement("button")
             const cardPhoto = document.createElement("img")
             const textContainer = document.createElement("div")
-            const categoryContainer = document.createElement("div")
             const category = document.createElement("span")
             const courseTitle = document.createElement("span")
             const price = document.createElement("span")
 
+
             cardsContainer.append(cardContainer)
             cardContainer.append(cardPhoto, textContainer)
-            textContainer.append(categoryContainer, courseTitle, price)
-            categoryContainer.append(category)
+            textContainer.append(category, courseTitle, price)
 
+            cardContainer.classList.add("card");
+            cardPhoto.classList.add("card-photo");
+            category.classList.add("card-category__title");
+
+            textContainer.classList.add("card-text__container");
             cardPhoto.src = currentCard.photo_src
             category.textContent = currentCard.category
             courseTitle.textContent = currentCard.text
-            price.textContent = currentCard.price + "|" + currentCard.speaker_name
+            price.textContent = currentCard.price + " | " + currentCard.speaker_name
 
         }
 
