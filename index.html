@@ -5,18 +5,63 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/main.scss">
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="scripts/index.js" defer type="module"></script>
     <title>Online courses</title>
 </head>
 <body>
     <header>
+        <div class="section-title">
+            <span class="section-title__meta">Enjoy your studying!</span>
+            <h2 class="section-title__main">Our online courses</h2>
+        </div>
 
     </header>
-    <main>
+    <nav>
+        <div class="category-buttons">
+            <button>
+                <span>All</span>
+                <span class="category-count" id="category-all__count"></span>
+            </button>
 
+            <button>
+                <span>Marketing</span>
+                <span class="category-count" id="category-marketing__count"></span>
+            </button>
+
+            <button>
+                <span>Management</span>
+                <span class="category-count" id="category-management__count"></span>
+            </button>
+
+            <button>
+                <span>HR & Recruting</span>
+                <span class="category-count" id="category-hr__count"></span>
+            </button>
+
+            <button>
+                <span>Design</span>
+                <span class="category-count" id="category-design__count"></span>
+            </button>
+
+            <button>
+                <span>Development</span>
+                <span class="category-count" id="category-development__count"></span>
+            </button>
+        </div>
+
+        <form class="search-form">
+            <input placeholder="Search course..." class="search-form__input" id="search-form__input">
+        </form>
+    </nav>
+    <main>
+        <div class="courses"></div>
     </main>
     <footer>
-
+        <div class="load-more">
+            <img src="assets/icons/load-more.svg" alt="load-more">
+            <button class="load-more__button"></button>
+        </div>
     </footer>
 </body>
 </html>

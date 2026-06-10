@@ -1,8 +1,9 @@
 {
   "name": "online-courses-landing",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
+    "dev": "sass --watch assets/main.scss:assets/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true,
